@@ -65,15 +65,29 @@
 
         <!--轮播广告部分-->
         <div class="ad">
+            <!--响应式轮播图-->
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img src="images/ad001.png">
+                    <!--响应式图片-->
+                    <picture>
+                        <source media="(min-width:50em)" srcset="images/ad001-l.png, images/ad001-m.png 2x">
+                        <source media="(min-width:30em)" srcset="images/ad001-m.png, images/ad001.png 2x">
+                        <img src="images/ad001.png" alt="2015年度报告"> <!--要写alt属性 利于搜索优化和用户体验-->
+                    </picture>
                 </div>
                 <div class="item">
-                    <img src="images/ad002.png">
+                    <picture>
+                        <source media="(min-width:50em)" srcset="images/ad002-l.png">
+                        <source media="(min-width:30em)" srcset="images/ad002-m.png">
+                        <img src="images/ad002.png" alt="2015年度报告"> <!--要写alt属性 利于搜索优化和用户体验-->
+                    </picture>
                 </div>
                 <div class="item">
-                    <img src="images/ad003.png">
+                    <picture>
+                        <source media="(min-width:50em)" srcset="images/ad003-l.png">
+                        <source media="(min-width:30em)" srcset="images/ad003-m.png">
+                        <img src="images/ad003.png" alt="2015年度报告"> <!--要写alt属性 利于搜索优化和用户体验-->
+                    </picture>
                 </div>
             </div>
         </div>
@@ -270,9 +284,10 @@
         <p>ly 版权所有 &copy;啦啦啦啦啦</p>
     </footer>
 
-<script src="js/vendor/jquery-1.12.4.min.js"></script>
-<script src="js/vendor/OwlCarousel2-2.2.1/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/OwlCarousel2-2.2.1/owl.carousel.min.js"></script>
+    <script src="js/vendor/picturefill.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 <!--ios 10+ js safari 禁止缩放 ios 11 无效唉-->
